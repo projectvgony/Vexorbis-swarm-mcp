@@ -1,0 +1,59 @@
+# Cache and build artifacts
+.swarm-cache/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Environment
+.env
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.mutmut-cache/
+
+# Docker
+*.log
+
+# Project state (optional - uncomment to track)
+# project_profile.json
+# project_profile.json.lock
+
+# Verification Artifacts
+debug_output.txt
+reproduce_pagerank.py
+test_hipporag_debug.txt
+pytest_*.txt
+benchmark_ide_vs_mcp.py
+.hipporag_cache/
+.hipporag_cache
+collection_log.txt
+logs.txt
+project_profile.json
+
+# Temporary Files (scripts, status dumps)
+*.tmp
+status.txt
+run_*.py
+test_*.py
+!tests/test_*.py
+

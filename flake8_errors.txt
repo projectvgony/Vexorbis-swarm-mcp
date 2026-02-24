@@ -1,0 +1,8 @@
+mcp_core/llm.py:287:56: F821 undefined name 'gemini_key'
+mcp_core/llm.py:290:37: F821 undefined name 'gemini_key'
+mcp_core/llm.py:303:56: F821 undefined name 'openai_key'
+mcp_core/llm.py:306:37: F821 undefined name 'openai_key'
+tests/test_rpc.py:16:20: F821 undefined name 'httpx'
+tests/test_rpc.py:52:5: F821 undefined name 'asyncio'
+tests/test_skills_execution.py:64:12: F821 undefined name 'ROADMAP'
+tests/test_skills_execution.py:73:20: F821 undefined name 'ROADMAP'

@@ -1,0 +1,55 @@
+services:
+  swarm:
+    build: .
+    container_name: swarm-mcp-server
+    ports:
+      - "127.0.0.1:8000:8000"
+    command: python dashboard_server.py
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    read_only: false
+    tmpfs:
+      - /tmp
+      - /app/.agent
+      - /app/.swarm-cache
+    environment:
+      - GITHUB_TOKEN=${GITHUB_TOKEN}
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - DATABASE_URL=postgresql://swarm:swarm-secret@db:5432/swarm_memory
+    depends_on:
+      - db
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8000/sse" ] # Check SSE endpoint availability
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 1G
+
+  db:
+    image: pgvector/pgvector:pg16
+    ports:
+      - "127.0.0.1:5433:5432"
+    security_opt:
+      - no-new-privileges:true
+    environment:
+      POSTGRES_USER: swarm
+      POSTGRES_PASSWORD: swarm-secret
+      POSTGRES_DB: swarm_memory
+    volumes:
+      - swarm_data:/var/lib/postgresql/data
+      - ./dashboard_server.py:/app/dashboard_server.py
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U swarm -d swarm_memory" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  swarm_data:

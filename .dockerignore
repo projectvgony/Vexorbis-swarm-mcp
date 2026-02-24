@@ -1,0 +1,93 @@
+# Development dependencies
+node_modules
+dashboard/
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python caches and build artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+build/
+dist/
+*.egg
+
+# Testing and coverage
+.pytest_cache/
+.mutmut-cache/
+.coverage
+htmlcov/
+tests/
+
+# Project caches
+.smart-coding-cache/
+.swarm-cache/
+.hipporag_cache
+.hipporag_cache/
+
+# Logs and databases
+*.log
+server.log
+*.db
+*.sqlite
+*.sqlite3
+
+# Git and version control
+.git/
+.gitignore
+
+# IDE and editor files
+.vscode/
+.idea/
+.gemini/
+*.swp
+*.swo
+
+# Environment files
+.env
+.env.*
+
+# Documentation (keep README.md for pip install)
+docs/
+*.md
+!README.md
+
+# CI/CD and deployment
+.github/
+k8s/
+docker-compose.yml
+Dockerfile
+.dockerignore
+
+# Project metadata and profiles
+swarm
+project_profile.json
+reproduce_profile.json
+*.tmp
+
+# Scripts and tools (not needed in runtime)
+scripts/
+analyze_logs.py
+benchmark_search.py
+debug_indexer.py
+mcp_gateway.py
+validate_all.py
+reproduction.py
+
+
+# Verification artifacts
+debug_output.txt
+reproduce_pagerank.py
+test_hipporag_debug.txt
+pytest_*.txt
+benchmark_ide_vs_mcp.py
+collection_log.txt
+logs.txt
+status.txt
+run_*.py
+test_*.py
