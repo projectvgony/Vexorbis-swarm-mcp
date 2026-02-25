@@ -165,7 +165,7 @@ analytics.optimize_database()
 
 1. **Check logs:** `docker logs swarm-mcp-server`
 2. **Enable debug:** `SWARM_DEBUG=true`
-3. **GitHub Issues:** [AgentAgony/swarm/issues](https://github.com/AgentAgony/swarm/issues)
+3. **GitHub Issues:** [projectvgony/Vexorbis/issues](https://github.com/projectvgony/Vexorbis/issues)
 
 ---
 

@@ -1,6 +1,6 @@
 # Architecture
 
-Project Swarm v3.4 is a Python-native, "Gemini-First" autonomous AI development orchestrator. It unifies state management, algorithmic reasoning, telemetry-backed memory, and a multi-role autonomous Git engine into a single, cohesive MCP server.
+Vexorbis Swarm v3.4 is a Python-native, Gemini-first autonomous AI development orchestrator. It unifies state management, algorithmic reasoning, telemetry-backed memory, and a multi-role autonomous Git engine into a single, cohesive MCP server.
 
 ---
 

@@ -1,4 +1,4 @@
-# Contributing to Project Swarm
+# Contributing to Vexorbis Swarm
 
 Thank you for your interest in contributing! 🐝
 
@@ -12,9 +12,10 @@ Thank you for your interest in contributing! 🐝
 ### Setup
 
 ```bash
-git clone https://github.com/your-org/swarm.git
-cd swarm
+git clone https://github.com/projectvgony/Vexorbis.git
+cd Vexorbis
 pip install -r requirements.txt
+cp .env.example .env   # Add GEMINI_API_KEY at minimum
 ```
 
 ## Development Workflow
@@ -82,7 +83,7 @@ def retrieve_context(self, query: str, top_k: int = 5) -> List[ContextChunk]:
 
 ## Testing Strategy
 
-Swarm v3.0 relies heavily on specialized algorithms. When contributing:
+Vexorbis Swarm relies heavily on specialized algorithms. When contributing:
 
 1. **Algorithms:** Add tests to `tests/algorithms/`.
 2. **Optional Deps:** Use `pytest.importorskip("lib")` for external deps like `z3` or `pycrdt`.

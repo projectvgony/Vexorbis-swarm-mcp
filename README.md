@@ -1,7 +1,7 @@
 <div align="center">
   <img src="docs/images/swarm_logo.png" alt="Swarm Logo" width="200"/>
 
-  # Swarm v3.4
+  # Vexorbis Swarm v3.4
 
   ### Turn your IDE into an Autonomous Engineering Team
 
@@ -67,8 +67,9 @@
 ### Docker (Recommended)
 
 ```bash
-git clone https://github.com/AgentAgony/swarm.git
-cd swarm
+git clone https://github.com/projectvgony/Vexorbis.git
+cd Vexorbis
+cp .env.example .env   # Add your GEMINI_API_KEY (and optionally GITHUB_TOKEN)
 docker compose up -d --build
 ```
 
@@ -134,10 +135,10 @@ Swarm synchronizes with a human-readable `PLAN.md` file, enabling a true co-pilo
 
 | Getting Started | Concepts | Guides | Reference |
 |-----------------|----------|--------|-----------|
-| [Introduction](new_docs/getting-started/introduction.md) | [Architecture](new_docs/concepts/architecture.md) | [PLAN.md Syntax](new_docs/guides/plan-syntax.md) | [Tools](new_docs/reference/tools.md) |
-| [Installation](new_docs/getting-started/installation.md) | [Decision Logic](new_docs/concepts/decision-logic.md) | [Git Workflows](new_docs/guides/git-workflows.md) | [Configuration](new_docs/reference/configuration.md) |
-| [Quick Start](new_docs/getting-started/quickstart.md) | [Three Pillars](new_docs/concepts/three-pillars.md) | [Debugging](new_docs/guides/debugging.md) | [API Reference](new_docs/reference/api.md) |
-| | | [Custom Tools](new_docs/guides/custom-tools.md) | [Troubleshooting](new_docs/reference/troubleshooting.md) |
+| [Introduction](docs/human/getting-started/introduction.md) | [Architecture](docs/human/concepts/architecture.md) | [PLAN.md Syntax](docs/human/guides/plan-syntax.md) | [Tools](docs/human/reference/tools.md) |
+| [Installation](docs/human/getting-started/installation.md) | [Decision Logic](docs/human/concepts/decision-logic.md) | [Git Workflows](docs/human/guides/git-workflows.md) | [Configuration](docs/human/reference/configuration.md) |
+| [Quick Start](docs/human/getting-started/quickstart.md) | [Three Pillars](docs/human/concepts/three-pillars.md) | [Debugging](docs/human/guides/debugging.md) | [API Reference](docs/human/reference/api.md) |
+| | | [Custom Tools](docs/human/guides/custom-tools.md) | [Troubleshooting](docs/human/reference/troubleshooting.md) |
 
 ---
 

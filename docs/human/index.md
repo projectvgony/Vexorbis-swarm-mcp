@@ -42,7 +42,7 @@ Complete technical reference:
 
 | Resource | Description |
 |----------|-------------|
-| [GitHub Repository](https://github.com/AgentAgony/swarm) | Source code and issues |
+| [GitHub Repository](https://github.com/projectvgony/Vexorbis) | Source code and issues |
 | [README](../README.md) | Project overview |
 | [ARCHITECTURE.md](../ARCHITECTURE.md) | Technical deep-dive |
 | [CHANGELOG](../CHANGELOG.md) | Version history |

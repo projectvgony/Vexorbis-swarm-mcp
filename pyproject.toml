@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.11"
 license = {text = "MIT"}
 authors = [
-    {name = "Swarm Team", email = "team@swarm-mcp.dev"}
+    {name = "ProjectVGONY", email = "projectvgony@users.noreply.github.com"}
 ]
 dependencies = [
     "pydantic>=2.9.0",

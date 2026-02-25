@@ -19,8 +19,11 @@ The fastest way to get started:
 
 ```bash
 # Clone the repository
-git clone https://github.com/AgentAgony/swarm.git
-cd swarm
+git clone https://github.com/projectvgony/Vexorbis.git
+cd Vexorbis
+
+# Copy env template and add your API key
+cp .env.example .env
 
 # Start the server
 docker compose up -d --build
@@ -38,8 +41,8 @@ For development or customization:
 
 ```bash
 # Clone and setup
-git clone https://github.com/AgentAgony/swarm.git
-cd swarm
+git clone https://github.com/projectvgony/Vexorbis.git
+cd Vexorbis
 
 # Create virtual environment
 python -m venv .venv
@@ -48,8 +51,8 @@ source .venv/bin/activate  # or .venv\Scripts\activate on Windows
 # Install dependencies
 pip install -e ".[dev]"
 
-# Set your API key
-export GEMINI_API_KEY="your-key-here"
+# Set your API key (copy from .env.example)
+cp .env.example .env
 
 # Run the server
 python server.py
