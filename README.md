@@ -1,3 +1,5 @@
+> **⚠️ DEPRECATED:** This project is now considered obsolete, we are migrating to agentic harness integration.
+
 <div align="center">
   <img src="docs/images/swarm_logo.png" alt="Swarm Logo" width="200"/>
 
